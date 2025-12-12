@@ -1,7 +1,5 @@
 services:
-  # -----------------------
   # PostgreSQL for FileStorageService
-  # -----------------------
   filestorage-db:
     image: postgres:16
     container_name: filestorage-db
@@ -13,11 +11,9 @@ services:
     volumes:
       - filestorage-db-data:/var/lib/postgresql/data
     ports:
-      - "5433:5432"     # внешний порт → внутренний порт Postgres
+      - "5433:5432"
 
-  # -----------------------
   # PostgreSQL for FileAnalysisService
-  # -----------------------
   fileanalysis-db:
     image: postgres:16
     container_name: fileanalysis-db
@@ -31,9 +27,7 @@ services:
     ports:
       - "5434:5432"
 
-  # -----------------------
   # FileStorageService
-  # -----------------------
   filestorage:
     build:
       context: ./src/FileStorageService
@@ -51,9 +45,7 @@ services:
     ports:
       - "8081:8080"
 
-  # -----------------------
   # FileAnalysisService
-  # -----------------------
   fileanalysis:
     build:
       context: ./src/FileAnalysisService
@@ -70,9 +62,7 @@ services:
     ports:
       - "8082:8080"
 
-  # -----------------------
   # ApiGateway
-  # -----------------------
   apigateway:
     build:
       context: ./src/ApiGateway
@@ -89,9 +79,7 @@ services:
     ports:
       - "8080:8080"
 
-# -----------------------
 # Persist volumes
-# -----------------------
 volumes:
   filestorage-db-data:
   fileanalysis-db-data:
