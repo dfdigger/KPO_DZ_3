@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "src\ApiGateway\ApiGateway.csproj", "{240FF276-CD6A-49A4-9F41-6F0927F8DBE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C712D171-D29E-47A7-A906-21B183197F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorageService", "src\FileStorageService\FileStorageService.csproj", "{CA4320ED-C71A-47F2-B513-5CE8C0D8FC76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAnalysisService", "src\FileAnalysisService\FileAnalysisService.csproj", "{70ED6B24-7E00-4813-A76A-221C8FDC8605}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{240FF276-CD6A-49A4-9F41-6F0927F8DBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240FF276-CD6A-49A4-9F41-6F0927F8DBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240FF276-CD6A-49A4-9F41-6F0927F8DBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240FF276-CD6A-49A4-9F41-6F0927F8DBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4320ED-C71A-47F2-B513-5CE8C0D8FC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4320ED-C71A-47F2-B513-5CE8C0D8FC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4320ED-C71A-47F2-B513-5CE8C0D8FC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4320ED-C71A-47F2-B513-5CE8C0D8FC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70ED6B24-7E00-4813-A76A-221C8FDC8605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70ED6B24-7E00-4813-A76A-221C8FDC8605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70ED6B24-7E00-4813-A76A-221C8FDC8605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70ED6B24-7E00-4813-A76A-221C8FDC8605}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{240FF276-CD6A-49A4-9F41-6F0927F8DBE4} = {C712D171-D29E-47A7-A906-21B183197F12}
+		{CA4320ED-C71A-47F2-B513-5CE8C0D8FC76} = {C712D171-D29E-47A7-A906-21B183197F12}
+		{70ED6B24-7E00-4813-A76A-221C8FDC8605} = {C712D171-D29E-47A7-A906-21B183197F12}
+	EndGlobalSection
+EndGlobal
